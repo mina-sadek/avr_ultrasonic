@@ -13,6 +13,8 @@ Pins used with the MCU are:
 - TRIG pin can be connected to any GPIO pin, and that pin will work as output from the MCU
 - ECHO pin is connected to INT0 pin (PD2), to use INT0 to detect changes in the echo output when going from LOW-to-HIGH to start counting the pulse width, and when going from HIGH-to-LOW to stop counting the pulse width and take the counted pulse_width value and translates it into a distance
 
+![Alt text](/img.jpg?raw=true "ATMega328P with Ultrasonic and LCD")
+
 # Ultrasonic module main idea
 The ultrasonic module is a transceiver, it has to ultrasonic speaker, one acting as a ultrasonic transmitting speaker and the other acting as an ultrasonic receiving mic (sensor).
 When a trigger is given to the module it sends a sound signal on the transmitting one, and put HIGH on the echo pin waiting until a signal is received back on the sensing mic or a time_out happens:
@@ -27,4 +29,3 @@ distance = sound_speed * time_one_way;
 As time calculations will be in micro-seconds:
 sound_speed = 0.0343 cm/usec
 distance = 0.0343 * pulse_time / 2;
-
