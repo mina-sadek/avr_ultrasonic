@@ -2,7 +2,7 @@
  * lcdlib.h
  *
  *  Created on: Mar 26, 2017
- *      Author: tornado
+ *      Author: Mina G. Sadek
  */
 
 #ifndef LCDLIB_
