@@ -2,7 +2,7 @@
  * main.c
  *
  *  Created on: Jun 13, 2017
- *      Author: Mina Sadek
+ *      Author: Mina G. Sadek
  */
 
 #ifdef F_CPU
