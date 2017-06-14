@@ -2,7 +2,7 @@
  * MACROS.h
  *
  *  Created on: Mar 28, 2017
- *      Author: tornado
+ *      Author: Mina G. Sadek
  */
 
 #ifndef MACROS_H_
