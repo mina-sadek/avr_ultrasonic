@@ -3,8 +3,11 @@ An ATMega328p based project that reads distance using ultrasonic sensor module, 
 
 # Overview
 The ultrasonic module used is the 4-pin HC-SR04, can be found here: https://www.sparkfun.com/products/13959.
+
 Its sensing range is 2cm to 400cm
+
 It has VCC, GND pins for powering the module, and 2 pins to interface with the microcontroller.
+
 Pins used with the MCU are:
   1. Trigger: The MCU has to put a pulse of 10-to-15 usec to initiates a distance reading process
   2. Echo:    The module sends a pulse on this pin to the MCU, width of the pulse determines distance between the sensor and the obstacle in its sensing range.
@@ -23,9 +26,15 @@ When a trigger is given to the module it sends a sound signal on the transmittin
 Using Speed of Sound, and getting time taken by the signal, distance can be easily calculated.
 
 As sound_speed = 34300 cm/sec
+
 and time_one_way = pulse_time / 2;   // where time_one_way = total time calculated by the sensor (pulse_time) divided by 2
+
 distance can be calculated as:
+
 distance = sound_speed * time_one_way;
+
 As time calculations will be in micro-seconds:
+
 sound_speed = 0.0343 cm/usec
+
 distance = 0.0343 * pulse_time / 2;
